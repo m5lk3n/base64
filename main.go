@@ -66,7 +66,7 @@ func main() {
 				"GET /spenc/:string - Base64-encodes the string with a newline appended",
 				"GET /encode/:string - Base64-encodes the string",
 				"GET /decode/:string - Base64-decodes the string",
-				"GET /health - Health check endpoint",
+				"GET /health - Provides basic health info",
 			},
 			"status": http.StatusOK,
 		})

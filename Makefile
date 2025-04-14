@@ -40,5 +40,5 @@ all: clean init get build
 docker-build:
 	go fmt
 	go vet
-	env GOOS=linux GOARCH=amd64 go build
+	env CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
 	docker build -t lttl.dev/base64:0.1.0 .

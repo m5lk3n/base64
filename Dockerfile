@@ -1,4 +1,4 @@
 FROM scratch
-COPY /base64 /base64
+COPY base64 /
 EXPOSE 8080
-CMD ["/base64"]
+ENTRYPOINT ["/base64"]
