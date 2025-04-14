@@ -13,6 +13,7 @@ Run:
 ```bash
 docker run -d \
   --restart unless-stopped \
+  -u "$(id -u):$(id -g)" \
   -p 8080:8080 \
   --name base64 \
   lttl.dev/base64:0.1.0
